@@ -1,0 +1,102 @@
+/* style.css */
+
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+/* Container styles */
+form {
+    background-color: #2575fc;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Header styles */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.8rem;
+    font-weight: bolder;
+    color: blueviolet;
+    margin-right: 250px;
+}
+
+/* Label styles */
+label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    display: block;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+/* Input styles */
+input[type="text"],
+input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    background: #ffffff;
+    color: #333;
+    transition: background 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus {
+    background: #f0f0f0;
+    outline: none;
+}
+
+/* Button styles */
+input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #ff4b2b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #ff6f61;
+    transform: translateY(-2px);
+}
+
+/* Responsive design */
+@media (max-width: 400px) {
+    form {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    input[type="submit"] {
+        font-size: 0.9rem;
+    }
+}
+
